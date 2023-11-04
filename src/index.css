@@ -1,0 +1,106 @@
+*{ 
+  /* outline: 2px solid red; */
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: monospace;
+  background-color: rgb(238, 237, 237);
+}
+::-webkit-scrollbar
+{
+  display: none;
+}
+.app{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding-top: 50px ;
+}
+
+.app h1{
+  font-size: 3vw;
+  border-bottom: 5px solid rgb(45, 202, 179);
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.tours{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  height: auto;
+
+  padding: 40px;
+}
+
+.tour{ 
+  display: inline-block;
+  height: 500px;
+  width: 350px;
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  overflow-clip-margin: content-box;
+  overflow: clip;
+
+  box-shadow: 0px 2px 2px rgb(157, 154, 154) , 0px -2px 2px rgb(157, 154, 154);
+}
+.tour .price
+{ 
+  position: absolute;
+  display: inline-block;
+
+  background-color: rgb(45, 202, 179);
+
+  padding: 5px;
+  border-top-left-radius: 8px;
+}
+.tour img{
+  height: 247px;
+  width:100%;
+}
+
+.tour .details
+{ 
+  height: 245px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap:20px;
+  background-color: white;
+
+  padding: 25px;
+
+  overflow: auto;
+  
+}
+.tour .title
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.tour .para
+{
+  border: none;
+  background-color: transparent;
+  color: rgb(45, 202, 179);
+
+}
+.tour .interest
+{
+  padding: 6px;
+  font-size: 1.1vw;
+  border: 2px solid rgb(45, 202, 179) ;
+  color: rgb(45, 202, 179) ;
+  background-color: transparent;
+}
